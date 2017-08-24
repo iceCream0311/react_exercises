@@ -1,0 +1,14 @@
+*{padding: 0;margin: 0}
+.App{background-color: #f6ffe5;width: 100%;min-height: 100vh;padding: 15px;box-sizing: border-box;}
+.msn-head{width: 60px;height: 60px;vertical-align: middle;border-radius: 5px; box-shadow: 0 0 3px rgba(0,0,0,0.5);overflow: hidden;}
+.msn-head img{width: 100%;height: 100%}
+.msn-item{padding: 15px; overflow: hidden;position:relative;}
+.msn-item_me .msn-head{float: right;margin-left: 15px;}
+.msn-item_other .msn-head{float: left;margin-right: 15px;}
+.msn-item .msn-content{overflow: hidden;word-wrap: break-word;word-break: normal;padding: 10px;border-radius: 5px;}
+.msn-item_other  .msn-content{background: #ddd; box-shadow: 1px 1px 3px rgba(0,0,0,0.5);}
+.msn-item_me {text-align: right;}
+.msn-item_me  .msn-content{background: #73bb49;; box-shadow: 1px 1px 3px rgba(0,0,0,0.5);text-align: right}
+.msn-item_other:before, .msn-item_me:after {content: '';position: absolute;top: 35px;z-index: 10; border: solid transparent;border-width: 8px 10px;}
+.msn-item_other:before{left: 70px; border-right-color: #ddd;}
+.msn-item_me:after{right:70px;border-left-color: #73bb49;}
